@@ -1,6 +1,4 @@
 import './LandingPage.css';
-import React, { useEffect } from 'react';
-
 
 function LandingPage() {
 
