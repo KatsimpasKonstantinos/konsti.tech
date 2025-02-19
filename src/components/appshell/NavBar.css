@@ -1,0 +1,22 @@
+.NavBar {
+    border-bottom: 1.5px dashed var(--text-color-primary);
+    transition: var(--time-color-transition);
+    height: 7vh;
+}
+
+.NavBar__Container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.NavBar__Element {
+    margin-right: 2vw;
+}
+
+.NavBar__Left {}
+
+.NavBar__Right {
+    display: flex;
+}

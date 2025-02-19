@@ -7,11 +7,38 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #131212;
 
+
+  background-color: white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --time-color-transition: 300ms;
+
+}
+
+body[data-theme="dark"] {
+  --background-color-primary: black;
+  --text-color-primary: white;
+  --time-color-transition: 300ms;
+
+  transition: var(--time-color-transition);
+  color: var(--text-color-primary);
+  background-color: var(--background-color-primary);
+}
+
+body[data-theme="light"] {
+  --background-color-primary: white;
+  --text-color-primary: black;
+  --time-color-transition: 300ms;
+
+  transition: var(--time-color-transition);
+  color: var(--text-color-primary);
+  background-color: var(--background-color-primary);
+}
+
+body {
+  margin: 0;
 }

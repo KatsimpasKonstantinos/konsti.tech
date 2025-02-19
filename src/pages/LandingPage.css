@@ -6,10 +6,7 @@
     align-items: center;
 
     font-size: 8rem;
-    font-weight: 700;
-    color: #e2d9d9;
     margin-bottom: 0;
-
 }
 
 .LandingPage__Name_First {
@@ -41,4 +38,12 @@
     to {
         transform: translateX(5%);
     }
+}
+
+.LandingPage__Projects {
+    font-size: 2rem;
+}
+
+.LandingPage__Job {
+    font-size: 4rem;
 }

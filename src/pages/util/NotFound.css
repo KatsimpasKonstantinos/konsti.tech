@@ -1,0 +1,17 @@
+.NotFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    height: 65vh;
+
+    box-sizing: border-box;
+}
+
+.NotFound__Text {
+    font-size: 5em;
+    margin-bottom: 15vh;
+}

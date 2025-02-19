@@ -1,0 +1,19 @@
+.Footer {
+    display: flex;
+    justify-content: space-around;
+
+    border-top: 1.5px dashed var(--text-color-primary);
+    transition: var(--time-color-transition);
+
+    height: 7vh;
+}
+
+.Footer__Name {}
+
+.Footer__Links {
+    display: flex;
+}
+
+.Footer__Link_Text {
+    margin-right: 10px;
+}
