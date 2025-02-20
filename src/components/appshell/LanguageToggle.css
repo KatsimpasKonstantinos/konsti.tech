@@ -1,0 +1,14 @@
+.LanguageToggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 3px;
+    border: 1.5px solid var(--text-color-primary);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

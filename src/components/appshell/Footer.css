@@ -1,10 +1,7 @@
 .Footer {
     display: flex;
     justify-content: space-around;
-
-    border-top: 1.5px dashed var(--text-color-primary);
-    transition: var(--time-color-transition);
-
+    outline: var(--dashed-border);
     height: 7vh;
 }
 

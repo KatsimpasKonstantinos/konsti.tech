@@ -1,0 +1,29 @@
+.DarkModeToggle {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 70px;
+    border-radius: 30px;
+    border: 1.5px solid var(--text-color-primary);
+}
+
+
+.DarkModeToggle__Ball {
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 30px;
+    background-color: var(--text-color-primary);
+    transition: var(--time-color-transition);
+}
+
+.DarkModeToggle__Ball--Light {
+    transform: translateX(0) rotate(0deg);
+
+}
+
+.DarkModeToggle__Ball--Dark {
+    transform: translateX(35px) rotate(180deg);
+}

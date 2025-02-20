@@ -8,35 +8,42 @@
 
   color-scheme: light dark;
 
-
-  background-color: white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --time-color-transition: 300ms;
-
 }
 
 body[data-theme="dark"] {
-  --background-color-primary: black;
-  --text-color-primary: white;
+  --background-color-primary: rgb(8, 8, 4);
+  --text-color-primary: rgb(240, 240, 229);
   --time-color-transition: 300ms;
+  --dashed-border: 2px dashed var(--text-color-primary);
 
   transition: var(--time-color-transition);
   color: var(--text-color-primary);
   background-color: var(--background-color-primary);
+
+  a {
+    color: rgb(98, 192, 98);
+  }
 }
 
 body[data-theme="light"] {
-  --background-color-primary: white;
-  --text-color-primary: black;
+  --background-color-primary: rgb(240, 240, 229);
+  --text-color-primary: rgb(8, 8, 4);
   --time-color-transition: 300ms;
+  --dashed-border: 2px dashed var(--text-color-primary);
+
 
   transition: var(--time-color-transition);
   color: var(--text-color-primary);
   background-color: var(--background-color-primary);
+
+  a {
+    color: rgb(4, 90, 4);
+  }
 }
 
 body {

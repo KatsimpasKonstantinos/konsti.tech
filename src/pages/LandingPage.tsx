@@ -1,28 +1,33 @@
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import TextSwapper from '../components/TextSwapper';
+import TextLanguage from '../components/TextLanguage';
 
 function LandingPage() {
 
     let jobNames = [
-        { name: " Programmer", font: "hacky" },
-        { name: " Developer", font: "hacky" },
-        { name: " Web Developer", font: "hacky" },
-        { name: "n Artist", font: "hacky" },
-        { name: " DJ", font: "hacky" },
+        { name: "a Programmer", font: "hacky" },
+        { name: "a Developer", font: "hacky" },
+        { name: "a Web Developer", font: "hacky" },
+        { name: "an Artist", font: "hacky" },
+        { name: "a DJ", font: "hacky" },
+        { name: "a Student", font: "hacky" },
+        { name: "a DJ", font: "hacky" },
+        { name: "hired", font: "hacky" },
+
     ]
 
     return (
         <div className="LandingPage">
             <div className="LandingPage__Name">
-                <div className='LandingPage__Name_First'>First Name</div>
-                <div className='LandingPage__Name_Last'>‎ ‎ ‎ ‎ ‎ Last Name</div>
+                <div className='LandingPage__Name_First'>Konstantinos</div>
+                <div className='LandingPage__Name_Last'>‎ ‎ ‎ ‎ ‎ Katsimpas</div>
             </div>
             <div className='LandingPage__Job'>
-                Im a<TextSwapper texts={jobNames} />
+                I'm <TextSwapper texts={jobNames} />
             </div>
             <div className='LandingPage__Projects'>
-                Take a Look at my <Link to="/projects">Projects</Link>
+                <TextLanguage texts={{ en: "Take a look at my", de: "Sie dir meine" }} /> <Link to="/projekte"><TextLanguage texts={{ en: "Projects", de: "Projekte" }} /></Link> <TextLanguage texts={{ en: "", de: "an" }} />
             </div>
             <br />
             <br />

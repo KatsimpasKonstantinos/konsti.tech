@@ -1,7 +1,9 @@
 .NavBar {
-    border-bottom: 1.5px dashed var(--text-color-primary);
-    transition: var(--time-color-transition);
+    display: flex;
+    align-items: center;
+    outline: var(--dashed-border);
     height: 7vh;
+    overflow: hidden;
 }
 
 .NavBar__Container {
@@ -15,8 +17,11 @@
     margin-right: 2vw;
 }
 
-.NavBar__Left {}
+.NavBar__Left {
+    display: flex;
+}
 
 .NavBar__Right {
     display: flex;
+    align-items: center
 }

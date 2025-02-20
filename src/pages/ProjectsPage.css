@@ -5,16 +5,13 @@
 .ProjectsPage__Grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
     transition: 300ms;
-
 }
 
 .ProjectPage__Image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .ProjectPage__Image_Wrapper {
@@ -28,8 +25,13 @@
     width: 100%;
     height: 60vh;
     transition: var(--time-color-transition);
-    border-radius: 10px;
-    border: 1.5px dashed var(--text-color-primary);
+    filter: grayscale(100%);
+    outline: var(--dashed-border);
+    outline-offset: -1px;
+}
+
+.ProjectsPage__Element:hover {
+    filter: grayscale(0%);
 }
 
 .ProjectsPage__Grid:has(.ProjectsPage__Element_1:hover) {
