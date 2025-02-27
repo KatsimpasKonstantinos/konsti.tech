@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import TextSwapper from '../components/TextSwapper';
 import TextLanguage from '../components/TextLanguage';
+import ProjectsPage from './ProjectsPage';
 
 function LandingPage() {
 
@@ -29,9 +30,7 @@ function LandingPage() {
             <div className='LandingPage__Projects'>
                 <TextLanguage texts={{ en: "Take a look at my", de: "Sie dir meine" }} /> <Link to="/projekte"><TextLanguage texts={{ en: "Projects", de: "Projekte" }} /></Link> <TextLanguage texts={{ en: "", de: "an" }} />
             </div>
-            <br />
-            <br />
-            <br />
+            <ProjectsPage />
         </div>
     );
 }

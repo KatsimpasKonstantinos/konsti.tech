@@ -1,4 +1,6 @@
-.LandingPage {}
+.LandingPage {
+    margin: 10px;
+}
 
 .LandingPage__Name {
     display: flex;
