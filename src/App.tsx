@@ -10,12 +10,16 @@ import Kontakt from './pages/util/Kontakt'
 import Impressum from './pages/util/Impressum'
 import AppShell from './components/appshell/AppShell'
 import { signal } from '@preact/signals-react'
+import BackgroundSwapper from './components/BackgroundSwapper'
 
 
 
 export const language = signal<string>('en')
 
 function App() {
+
+  let backgroundSwapper = new BackgroundSwapper();
+  backgroundSwapper.preload();
 
   return (
     <div className="App">

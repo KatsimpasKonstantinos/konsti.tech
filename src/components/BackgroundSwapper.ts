@@ -71,6 +71,15 @@ class BackgroundSwapper {
         const image = images[Math.floor(Math.random() * images.length)];
         this.body.style.backgroundImage = `url(${image})`;
     }
+
+    preload() {
+        Object.values(jobImages).forEach(job => {
+            job.images.forEach(image => {
+                const img = new Image();
+                img.src = image;
+            });
+        });
+    }
 }
 
 
