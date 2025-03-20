@@ -40,8 +40,8 @@ function LandingPage() {
     return (
         <div className="LandingPage">
             <div className="LandingPage__Name">
-                <div className='LandingPage__Name_First'>Konstantinos</div>
-                <div className='LandingPage__Name_Last'>‎ ‎ ‎ ‎ ‎ Katsimpas</div>
+                <div className='LandingPage__Name_First'>KONSTANTINOS</div>
+                <div className='LandingPage__Name_Last'>‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ KATSIMPAS</div>
             </div>
             <div className='LandingPage__Job'>
                 <TextSwapper texts={jobNames} speed={50} delay={3000} />

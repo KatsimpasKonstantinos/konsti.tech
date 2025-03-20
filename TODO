@@ -2,7 +2,8 @@
 
 
 - [ ] Fix Font
-- [ ] ADD PRELOADER FOR IMAGES!!!
+- [ ] preload priority queue
+- [ ] preload cache, to fix stutter transition bug that occurs after some time
 - [ ] Smooth scrolling?
 - [ ] Super fancy glitter Button (high res)
 - [ ] Kon Kat scroll into logo K.K

@@ -1,4 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Orbitron:wght@400..900&display=swap');
+
+@font-face {
+  font-family: 'MonumentExtended-Ultrabold';
+  src: url('./assets/fonts/MonumentExtended-Ultrabold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'evangelion-regular';
+  src: url('./assets/fonts/evangelion-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 :root {
@@ -35,16 +50,17 @@ body[data-theme="dark"] {
   background-size: cover;
   background-image: url('./assets/images/backgrounds/MultimediaEngineer1.jpg');
   background-position: 0 -50vh;
-  background-blend-mode: luminosity;
-  background-blend-mode: screen;
-  background-blend-mode: difference;
-  background-blend-mode: overlay;
-  background-blend-mode: hard-light;
   background-blend-mode: soft-light;
+  background-blend-mode: overlay;
   background-blend-mode: color-dodge;
+  background-blend-mode: luminosity;
+  background-blend-mode: difference;
+  background-blend-mode: screen;
+  background-blend-mode: hard-light;
+
 
   transition: background-image 1s ease-in-out;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
 
   a {
     color: rgb(220, 225, 231);
@@ -58,7 +74,7 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="light"] {
-  --background-color-primary: rgb(167, 172, 189);
+  --background-color-primary: rgb(241, 244, 255);
   --text-color-primary: rgb(8, 8, 4);
   --text-color-third: rgb(73, 73, 73);
 
@@ -72,7 +88,8 @@ body[data-theme="light"] {
   background-size: cover;
   background-image: url('./assets/images/backgrounds/DataAlchemist1.jpg');
   background-position: 0 -50vh;
-  background-blend-mode: overlay;
+  background-blend-mode: color-burn;
+  background-blend-mode: difference;
 
   transition: background-image 1s ease-in-out;
   backdrop-filter: blur(3px);
