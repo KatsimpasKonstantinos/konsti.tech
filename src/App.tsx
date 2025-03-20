@@ -10,7 +10,6 @@ import Kontakt from './pages/util/Kontakt'
 import Impressum from './pages/util/Impressum'
 import AppShell from './components/appshell/AppShell'
 import { signal } from '@preact/signals-react'
-import swapBackground from './components/BackgroundSwapper'
 
 
 
