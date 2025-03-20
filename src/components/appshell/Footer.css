@@ -1,11 +1,20 @@
 .Footer {
     display: flex;
-    justify-content: space-around;
-    outline: var(--dashed-border);
-    height: 7vh;
+    justify-content: space-between;
+    height: 5vh;
+
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.1);
+
 }
 
-.Footer__Name {}
+.Footer__Name {
+    display: flex;
+    align-items: center;
+}
 
 .Footer__Links {
     display: flex;
@@ -13,4 +22,6 @@
 
 .Footer__Link_Text {
     margin-right: 10px;
+    display: flex;
+    align-items: center;
 }

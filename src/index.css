@@ -13,28 +13,41 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  scroll-behavior: smooth;
+
 }
 
 body[data-theme="dark"] {
-  --background-color-primary: rgb(8, 8, 4);
-  --text-color-primary: rgb(240, 240, 229);
+  --background-color-primary: #221d27;
+  --text-color-primary: rgb(213, 212, 235);
+  --text-color-secondary: rgb(101, 102, 95);
+  --text-color-third: rgb(71, 71, 71);
   --time-color-transition: 300ms;
-  --dashed-border: 2px dashed var(--text-color-primary);
+  --dashed-border-thickness: 1.5;
+  --dashed-border: calc(var(--dashed-border-thickness) * 1px) dashed var(--text-color-third);
+
 
   transition: var(--time-color-transition);
   color: var(--text-color-primary);
   background-color: var(--background-color-primary);
+  background-image: url('./assets/laser_cube.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 
   a {
-    color: rgb(98, 192, 98);
+    color: rgb(220, 231, 220);
+    text-decoration: none;
   }
+
 }
 
 body[data-theme="light"] {
   --background-color-primary: rgb(240, 240, 229);
   --text-color-primary: rgb(8, 8, 4);
   --time-color-transition: 300ms;
-  --dashed-border: 2px dashed var(--text-color-primary);
+  --dashed-border: 1.5px dashed var(--text-color-primary);
 
 
   transition: var(--time-color-transition);
@@ -52,6 +65,7 @@ body[data-theme="light"] {
 
   a {
     color: rgb(4, 90, 4);
+    text-decoration: none;
   }
 }
 

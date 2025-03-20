@@ -1,0 +1,30 @@
+.AppShell {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    gap: 1px;
+}
+
+
+.AppShell__Navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.AppShell__Content {}
+
+.AppShell__Footer {}
+
+.AppShell__Blur {
+    backdrop-filter: blur(10px);
+}
+
+.AppShell__Outline {
+    outline: var(--dashed-border);
+    outline-offset: calc(var(--dashed-border-thickness)/2 * 1px);
+
+}

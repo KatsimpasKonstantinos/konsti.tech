@@ -3,6 +3,8 @@ import './LandingPage.css';
 import TextSwapper from '../components/TextSwapper';
 import TextLanguage from '../components/TextLanguage';
 import ProjectsPage from './ProjectsPage';
+import { useEffect } from 'react';
+
 
 function LandingPage() {
 
@@ -18,6 +20,23 @@ function LandingPage() {
 
     ]
 
+    const scrollTo = (id: string) => {
+        const projectsElement = document.getElementById(id);
+        if (projectsElement) {
+            projectsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    useEffect(() => {
+        const hash = window.location.hash;
+        if (hash) {
+            const id = hash.substring(1); // Remove the '#' from the hash
+            scrollTo(id);
+        }
+    }, []);
+
+
+
     return (
         <div className="LandingPage">
             <div className="LandingPage__Name">
@@ -26,9 +45,6 @@ function LandingPage() {
             </div>
             <div className='LandingPage__Job'>
                 I'm <TextSwapper texts={jobNames} />
-            </div>
-            <div className='LandingPage__Projects'>
-                <TextLanguage texts={{ en: "Take a look at my", de: "Sie dir meine" }} /> <Link to="/projekte"><TextLanguage texts={{ en: "Projects", de: "Projekte" }} /></Link> <TextLanguage texts={{ en: "", de: "an" }} />
             </div>
             <ProjectsPage />
         </div>

@@ -24,13 +24,12 @@ function App() {
       <AppShell>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/projekte" element={<ProjectsPage />} />
-          <Route path="/projekte/webapps" element={<WebApps />} />
-          <Route path="/projekte/social" element={<Social />} />
-          <Route path="/projekte/personal" element={<Personal />} />
-          <Route path="/projekte/something" element={<Something />} />
-          <Route path="/kontakt" element={<Kontakt />} />
-          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/projects/webapps" element={<WebApps />} />
+          <Route path="/projects/social" element={<Social />} />
+          <Route path="/projects/personal" element={<Personal />} />
+          <Route path="/projects/something" element={<Something />} />
+          <Route path="/contact" element={<Kontakt />} />
+          <Route path="/imprint" element={<Impressum />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </AppShell>

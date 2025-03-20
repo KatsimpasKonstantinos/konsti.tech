@@ -13,7 +13,7 @@ interface TextLanguageProps {
 
 function TextLanguage(props: TextLanguageProps) {
     let texts = props.texts;
-    let speed = props.speed || 50;
+    let speed = props.speed || 30;
     let preShow = props.preShow || false
 
     let displayedText = useSignal(preShow ? texts[language.value] : texts[language.value][0]);

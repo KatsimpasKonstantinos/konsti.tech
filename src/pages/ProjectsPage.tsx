@@ -9,36 +9,36 @@ import TextLanguage from "../components/TextLanguage";
 function ProjectsPage() {
 
     return (
-        <div className="ProjectsPage">
+        <div className="ProjectsPage" id="projects">
             <h1><TextLanguage texts={{ en: "My Projects", de: "Meine Projekte" }} /></h1>
             <p><TextLanguage texts={{
                 en: "Here are all my Projects Im so proud to show you",
                 de: "Hier sind alle meine Projekte die ich Ihnen gerne zeigen möchte"
-            }} speed={10} /></p>
+            }} speed={5} /></p>
             <div className="ProjectsPage__Grid">
                 <div className="ProjectsPage__Element ProjectsPage__Element_1">
-                    <Link to="/projekte/webapps">
+                    <Link to="/projects/webapps">
                         <div className="ProjectPage__Image_Wrapper">
                             <img className="ProjectPage__Image" src={ImageWebApps} />
                         </div>
                     </Link>
                 </div>
                 <div className="ProjectsPage__Element ProjectsPage__Element_2">
-                    <Link to="/projekte/personal">
+                    <Link to="/projects/personal">
                         <div className="ProjectPage__Image_Wrapper">
                             <img className="ProjectPage__Image" src={ImagePersonal} />
                         </div>
                     </Link>
                 </div>
                 <div className="ProjectsPage__Element ProjectsPage__Element_3">
-                    <Link to="/projekte/social">
+                    <Link to="/projects/social">
                         <div className="ProjectPage__Image_Wrapper">
                             <img className="ProjectPage__Image" src={ImageSocial} />
                         </div>
                     </Link>
                 </div>
                 <div className="ProjectsPage__Element ProjectsPage__Element_4">
-                    <Link to="/projekte/something">
+                    <Link to="/projects/something">
                         <div className="ProjectPage__Image_Wrapper">
                             <img className="ProjectPage__Image" src={ImageSomething} />
                         </div>
