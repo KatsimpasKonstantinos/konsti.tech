@@ -1,30 +1,30 @@
-import Artist1 from '../assets/images/backgrounds/Artist1.jpg';
+import Artist1 from '../assets/images/backgrounds-min/Artist1-min.jpg';
 
-import ArtistLaser1 from '../assets/images/backgrounds/ArtistLaser1.jpg';
-import ArtistLaser2 from '../assets/images/backgrounds/ArtistLaser2.jpg';
+import ArtistLaser1 from '../assets/images/backgrounds-min/ArtistLaser1-min.jpg';
+import ArtistLaser2 from '../assets/images/backgrounds-min/ArtistLaser2-min.jpg';
 
-import ArtistTouchdesigner1 from '../assets/images/backgrounds/ArtistTouchdesigner1.jpg';
+import ArtistTouchdesigner1 from '../assets/images/backgrounds-min/ArtistTouchdesigner1-min.jpg';
 
-import DataAlchemist1 from '../assets/images/backgrounds/DataAlchemist1.jpg';
+import DataAlchemist1 from '../assets/images/backgrounds-min/DataAlchemist1-min.jpg';
 
-import Hacker1 from '../assets/images/backgrounds/Hacker1.jpg';
-import Hacker2 from '../assets/images/backgrounds/Hacker2.jpg';
-import Hacker3 from '../assets/images/backgrounds/Hacker3.jpg';
+import Hacker1 from '../assets/images/backgrounds-min/Hacker1-min.jpg';
+import Hacker2 from '../assets/images/backgrounds-min/Hacker2-min.jpg';
+import Hacker3 from '../assets/images/backgrounds-min/Hacker3-min.jpg';
 
-import MultimediaEngineer1 from '../assets/images/backgrounds/MultimediaEngineer1.jpg';
-import MultimediaEngineer2 from '../assets/images/backgrounds/MultimediaEngineer2.jpg';
-import MultimediaEngineer3 from '../assets/images/backgrounds/MultimediaEngineer3.jpg';
+import MultimediaEngineer1 from '../assets/images/backgrounds-min/MultimediaEngineer1-min.jpg';
+import MultimediaEngineer2 from '../assets/images/backgrounds-min/MultimediaEngineer2-min.jpg';
+import MultimediaEngineer3 from '../assets/images/backgrounds-min/MultimediaEngineer3-min.jpg';
 
-import Programmer1 from '../assets/images/backgrounds/Programmer1.jpg';
-import Programmer2 from '../assets/images/backgrounds/Programmer2.jpg';
+import Programmer1 from '../assets/images/backgrounds-min/Programmer1-min.jpg';
+import Programmer2 from '../assets/images/backgrounds-min/Programmer2-min.jpg';
 
-import DJ1 from '../assets/images/backgrounds/DJ1.jpg';
-import DJ2 from '../assets/images/backgrounds/DJ2.jpg';
-import DJ3 from '../assets/images/backgrounds/DJ3.jpg';
-import DJ4 from '../assets/images/backgrounds/DJ4.jpg';
+import DJ1 from '../assets/images/backgrounds-min/DJ1-min.jpg';
+import DJ2 from '../assets/images/backgrounds-min/DJ2-min.jpg';
+import DJ3 from '../assets/images/backgrounds-min/DJ3-min.jpg';
+import DJ4 from '../assets/images/backgrounds-min/DJ4-min.jpg';
 
-import VJ1 from '../assets/images/backgrounds/VJ1.jpg';
-import VJ2 from '../assets/images/backgrounds/VJ2.jpg';
+import VJ1 from '../assets/images/backgrounds-min/VJ1-min.jpg';
+import VJ2 from '../assets/images/backgrounds-min/VJ2-min.jpg';
 
 const Artist = { images: [Artist1], name: "Artist" };
 const ArtistLaser = { images: [ArtistLaser1, ArtistLaser2], name: "ArtistLaser" };
