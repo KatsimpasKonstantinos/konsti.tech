@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import LandingPage from './pages/LandingPage'
-import ProjectsPage from './pages/ProjectsPage'
 import WebApps from './pages/Projects/WebApps/WebApps'
 import Social from './pages/Projects/Social/Social'
 import Personal from './pages/Projects/Personal/Personal'

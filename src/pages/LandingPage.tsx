@@ -1,7 +1,5 @@
-import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import TextSwapper from '../components/TextSwapper';
-import TextLanguage from '../components/TextLanguage';
 import ProjectsPage from './ProjectsPage';
 import { useEffect } from 'react';
 
