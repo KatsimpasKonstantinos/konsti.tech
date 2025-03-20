@@ -1,14 +1,11 @@
-.LandingPage {
-    margin: 10px;
-}
+.LandingPage {}
 
 .LandingPage__Name {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     font-size: 8rem;
-    margin-bottom: 0;
+    margin-top: 10vh;
 }
 
 .LandingPage__Name_First {
@@ -21,24 +18,51 @@
     animation-timeline: scroll();
 }
 
+.LandingPage__Job {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.LandingPage__Presentation {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin: 10px;
+}
+
 
 @keyframes scroll-left {
-    50% {
+    0% {
+        transform: translateX(0%);
+
+    }
+
+    80% {
         transform: translateX(-5%);
     }
 
     to {
         transform: translateX(-5%);
+        opacity: 0;
     }
 }
 
 @keyframes scroll-right {
-    50% {
+    0% {
+        transform: translateX(0%);
+    }
+
+    80% {
         transform: translateX(5%);
     }
 
     to {
         transform: translateX(5%);
+        opacity: 0;
     }
 }
 

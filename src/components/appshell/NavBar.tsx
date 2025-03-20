@@ -16,7 +16,7 @@ function NavBar() {
     return (
         <nav className="NavBar">
             <div className="NavBar__Left">
-                <p className="NavBar__Element"><Link to="/"><TextLanguage texts={{ en: "Home", de: "Haus" }} /></Link></p>
+                <p className="NavBar__Element"><Link to="/"><TextLanguage texts={{ en: "Home", de: "Start" }} /></Link></p>
             </div>
             <div className="NavBar__Right">
                 <p className="NavBar__Element"><Link to="/#projects" onClick={() => scrollTo("projects")}><TextLanguage texts={{ en: "Projects", de: "Projekte" }} /></Link></p>

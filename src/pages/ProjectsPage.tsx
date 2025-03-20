@@ -10,11 +10,13 @@ function ProjectsPage() {
 
     return (
         <div className="ProjectsPage" id="projects">
-            <h1><TextLanguage texts={{ en: "My Projects", de: "Meine Projekte" }} /></h1>
-            <p><TextLanguage texts={{
-                en: "Here are all my Projects Im so proud to show you",
-                de: "Hier sind alle meine Projekte die ich Ihnen gerne zeigen möchte"
-            }} speed={5} /></p>
+            <div className="ProjectsPage__Text">
+                <h1><TextLanguage texts={{ en: "My Projects", de: "Meine Projekte" }} /></h1>
+                <p><TextLanguage texts={{
+                    en: "Here are all my Projects Im would like to show you",
+                    de: "Hier sind alle meine Projekte die ich Ihnen gerne zeigen möchte"
+                }} speed={5} /></p>
+            </div>
             <div className="ProjectsPage__Grid">
                 <div className="ProjectsPage__Element ProjectsPage__Element_1">
                     <Link to="/projects/webapps">

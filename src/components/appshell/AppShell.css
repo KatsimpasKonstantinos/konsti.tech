@@ -9,7 +9,6 @@
     position: sticky;
     top: 0;
     z-index: 100;
-
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.1);
 }
@@ -17,10 +16,10 @@
 
 .AppShell__Content {}
 
-.AppShell__Footer {}
-
-.AppShell__Blur {
+.AppShell__Footer {
+    z-index: 100;
     backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .AppShell__Outline {

@@ -15,13 +15,15 @@
 
   scroll-behavior: smooth;
 
+
+
 }
 
 body[data-theme="dark"] {
   --background-color-primary: #221d27;
-  --text-color-primary: rgb(213, 212, 235);
+  --text-color-primary: #e6e2eb;
   --text-color-secondary: rgb(101, 102, 95);
-  --text-color-third: rgb(71, 71, 71);
+  --text-color-third: rgb(92, 92, 92);
   --time-color-transition: 300ms;
   --dashed-border-thickness: 1.5;
   --dashed-border: calc(var(--dashed-border-thickness) * 1px) dashed var(--text-color-third);
@@ -30,54 +32,57 @@ body[data-theme="dark"] {
   transition: var(--time-color-transition);
   color: var(--text-color-primary);
   background-color: var(--background-color-primary);
-  background-image: url('./assets/laser_cube.jpg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('./assets/images/backgrounds/MultimediaEngineer1.jpg');
+  background-position: 0 -50vh;
+  background-blend-mode: luminosity;
+  background-blend-mode: screen;
+  background-blend-mode: difference;
+  background-blend-mode: overlay;
+  background-blend-mode: hard-light;
+  background-blend-mode: soft-light;
+  background-blend-mode: color-dodge;
 
+  transition: background-image 1s ease-in-out;
+  backdrop-filter: blur(3px);
 
   a {
-    color: rgb(220, 231, 220);
+    color: rgb(220, 225, 231);
     text-decoration: none;
-  }
+    transition: text-shadow 0.2s ease-in-out;
 
+    &:hover {
+      text-shadow: 2px 2px 4px var(--text-color-primary);
+    }
+  }
 }
 
 body[data-theme="light"] {
-  --background-color-primary: rgb(240, 240, 229);
+  --background-color-primary: rgb(167, 172, 189);
   --text-color-primary: rgb(8, 8, 4);
+  --text-color-third: rgb(73, 73, 73);
+
   --time-color-transition: 300ms;
-  --dashed-border: 1.5px dashed var(--text-color-primary);
+  --dashed-border: 1.5px dashed var(--text-color-third);
 
 
   transition: var(--time-color-transition);
   color: var(--text-color-primary);
+  background-color: var(--background-color-primary);
+  background-size: cover;
+  background-image: url('./assets/images/backgrounds/DataAlchemist1.jpg');
+  background-position: 0 -50vh;
+  background-blend-mode: overlay;
 
-  background:
-    radial-gradient(circle at 20% 30%, #ffb3c6 20%, transparent 50%),
-    radial-gradient(circle at 80% 40%, #ffd699 20%, transparent 50%),
-    radial-gradient(circle at 30% 80%, #ffcce5 20%, transparent 50%),
-    radial-gradient(circle at 70% 90%, #ffcc99 20%, transparent 50%),
-    radial-gradient(circle at 60% 10%, #ff99b3 20%, transparent 50%);
-  background-size: 200% 200%;
-  backdrop-filter: blur(10px);
-  animation: gradientBlobs 10s infinite alternate ease-in-out;
+  transition: background-image 1s ease-in-out;
+  backdrop-filter: blur(3px);
 
   a {
-    color: rgb(4, 90, 4);
+    color: rgb(18, 22, 2);
     text-decoration: none;
   }
 }
 
-@keyframes gradientBlobs {
-  0% {
-    background-position: 0% 0%;
-  }
-
-  100% {
-    background-position: 100% 100%;
-  }
-}
 
 body {
   margin: 0;
