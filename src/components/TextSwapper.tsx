@@ -28,7 +28,7 @@ function TextSwapper(props: TextSwapperProps) {
     let deleteCharTimeout: ReturnType<typeof setTimeout>;
 
     let backgroundSwapper = new BackgroundSwapper();
-
+    backgroundSwapper.preload();
 
 
     let dispose = effect(() => {
