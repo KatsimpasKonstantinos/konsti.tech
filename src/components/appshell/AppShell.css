@@ -24,6 +24,5 @@
 
 .AppShell__Outline {
     outline: var(--dashed-border);
-    outline-offset: calc(var(--dashed-border-thickness)/2 * 1px);
 
 }

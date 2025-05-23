@@ -34,7 +34,6 @@
     transition: var(--time-color-transition);
     filter: grayscale(100%);
     outline: var(--dashed-border);
-    outline-offset: calc(var(--dashed-border-thickness)/2 * 1px);
 }
 
 .ProjectsPage__Element:hover {
